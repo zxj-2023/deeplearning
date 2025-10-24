@@ -413,6 +413,7 @@ dependencies = [
     { name = "ffmpeg-python" },
     { name = "jupyter" },
     { name = "matplotlib" },
+    { name = "nbconvert" },
     { name = "numpy" },
     { name = "tensorflow" },
 ]
@@ -422,6 +423,7 @@ requires-dist = [
     { name = "ffmpeg-python", specifier = ">=0.2.0" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.6" },
+    { name = "nbconvert", specifier = ">=7.16.6" },
     { name = "numpy", specifier = ">=2.3.3" },
     { name = "tensorflow", specifier = ">=2.20.0" },
 ]

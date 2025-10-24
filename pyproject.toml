@@ -8,6 +8,7 @@ dependencies = [
     "ffmpeg-python>=0.2.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.6",
+    "nbconvert>=7.16.6",
     "numpy>=2.3.3",
     "tensorflow>=2.20.0",
 ]

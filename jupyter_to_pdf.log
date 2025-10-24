@@ -1,0 +1,1653 @@
+2025-10-24 17:24:33,472 - ERROR - 未找到 jupyter 命令，请先安装 jupyter
+2025-10-24 17:24:33,473 - ERROR - 依赖检查失败，请安装必要的依赖后重试
+2025-10-24 17:24:56,013 - ERROR - 未找到 jupyter 命令，请先安装 jupyter
+2025-10-24 17:24:56,013 - ERROR - 依赖检查失败，请安装必要的依赖后重试
+2025-10-24 17:25:12,073 - ERROR - 未找到 jupyter 命令，请先安装 jupyter
+2025-10-24 17:25:12,074 - ERROR - 依赖检查失败，请安装必要的依赖后重试
+2025-10-24 17:25:47,143 - ERROR - 未找到 jupyter 命令，请先安装 jupyter
+2025-10-24 17:25:47,144 - ERROR - 依赖检查失败，请安装必要的依赖后重试
+2025-10-24 17:26:09,574 - ERROR - 未找到 jupyter 命令，请先安装 jupyter
+2025-10-24 17:26:09,574 - ERROR - 依赖检查失败，请安装必要的依赖后重试
+2025-10-24 17:26:17,301 - ERROR - 未找到 jupyter 命令，请先安装 jupyter
+2025-10-24 17:26:17,302 - ERROR - 依赖检查失败，请安装必要的依赖后重试
+2025-10-24 17:28:13,353 - ERROR - 未找到 nbconvert，请先安装 nbconvert
+2025-10-24 17:28:13,353 - ERROR - 依赖检查失败，请安装必要的依赖后重试
+2025-10-24 17:29:25,741 - INFO - 依赖检查通过
+2025-10-24 17:29:25,742 - INFO - Jupyter Notebook 批量转换工具
+2025-10-24 17:29:25,742 - INFO - 目标目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:29:25,743 - INFO - 开始时间: 2025-10-24 17:29:25
+2025-10-24 17:29:25,743 - INFO - 正在搜索目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:29:25,743 - INFO - 找到 4 个 Jupyter notebook 文件
+2025-10-24 17:29:25,743 - INFO - 开始批量转换 4 个文件...
+2025-10-24 17:29:25,743 - INFO - ============================================================
+2025-10-24 17:29:25,743 - INFO - [1/4] 处理文件: D:\code\python\deeplearning\homework4\main.ipynb
+2025-10-24 17:29:25,743 - INFO - 正在转换: main.ipynb
+2025-10-24 17:29:27,853 - ERROR - ✗ main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:27,853 - INFO - [2/4] 处理文件: D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb
+2025-10-24 17:29:27,853 - INFO - 正在转换: tf2.0-exercise.ipynb
+2025-10-24 17:29:30,472 - ERROR - ✗ tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:30,472 - INFO - [3/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:29:30,473 - INFO - 正在转换: tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:29:32,704 - ERROR - ✗ tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:32,704 - INFO - [4/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:29:32,705 - INFO - 正在转换: tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:29:34,837 - ERROR - ✗ tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:34,838 - INFO - ============================================================
+2025-10-24 17:29:34,838 - INFO - 转换完成！
+2025-10-24 17:29:34,838 - INFO - 成功转换: 0 个文件
+2025-10-24 17:29:34,838 - INFO - 转换失败: 4 个文件
+2025-10-24 17:29:34,838 - ERROR - 
+失败的文件详情:
+2025-10-24 17:29:34,838 - ERROR -   - D:\code\python\deeplearning\homework4\main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:34,838 - ERROR -   - D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:34,839 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:34,839 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:29:34,839 - INFO - 
+详细日志已保存到: jupyter_to_pdf.log
+2025-10-24 17:36:44,889 - INFO - 依赖检查通过
+2025-10-24 17:36:44,889 - INFO - Jupyter Notebook 批量转换工具
+2025-10-24 17:36:44,889 - INFO - 目标目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:36:44,890 - INFO - 开始时间: 2025-10-24 17:36:44
+2025-10-24 17:36:44,890 - INFO - 正在搜索目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:36:44,890 - INFO - 找到 4 个 Jupyter notebook 文件
+2025-10-24 17:36:44,890 - INFO - 开始批量转换 4 个文件...
+2025-10-24 17:36:44,890 - INFO - ============================================================
+2025-10-24 17:36:44,891 - INFO - [1/4] 处理文件: D:\code\python\deeplearning\homework4\main.ipynb
+2025-10-24 17:36:44,891 - INFO - 正在转换: main.ipynb
+2025-10-24 17:36:46,553 - ERROR - ✗ main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:46,554 - INFO - [2/4] 处理文件: D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb
+2025-10-24 17:36:46,554 - INFO - 正在转换: tf2.0-exercise.ipynb
+2025-10-24 17:36:48,769 - ERROR - ✗ tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:48,769 - INFO - [3/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:36:48,769 - INFO - 正在转换: tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:36:51,491 - ERROR - ✗ tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:51,491 - INFO - [4/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:36:51,491 - INFO - 正在转换: tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:36:54,557 - ERROR - ✗ tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:54,558 - INFO - ============================================================
+2025-10-24 17:36:54,558 - INFO - 转换完成！
+2025-10-24 17:36:54,558 - INFO - 成功转换: 0 个文件
+2025-10-24 17:36:54,558 - INFO - 转换失败: 4 个文件
+2025-10-24 17:36:54,559 - ERROR - 
+失败的文件详情:
+2025-10-24 17:36:54,559 - ERROR -   - D:\code\python\deeplearning\homework4\main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:54,559 - ERROR -   - D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:54,560 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:54,561 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:36:54,561 - INFO - 
+详细日志已保存到: jupyter_to_pdf.log
+2025-10-24 17:37:16,015 - INFO - 依赖检查通过
+2025-10-24 17:37:16,015 - INFO - Jupyter Notebook 批量转换工具
+2025-10-24 17:37:16,015 - INFO - 目标目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:37:16,015 - INFO - 开始时间: 2025-10-24 17:37:16
+2025-10-24 17:37:16,015 - INFO - 正在搜索目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:37:16,016 - INFO - 找到 4 个 Jupyter notebook 文件
+2025-10-24 17:37:16,016 - INFO - 开始批量转换 4 个文件...
+2025-10-24 17:37:16,016 - INFO - ============================================================
+2025-10-24 17:37:16,016 - INFO - [1/4] 处理文件: D:\code\python\deeplearning\homework4\main.ipynb
+2025-10-24 17:37:16,016 - INFO - 正在转换: main.ipynb
+2025-10-24 17:37:17,716 - ERROR - ✗ main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:17,717 - INFO - [2/4] 处理文件: D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb
+2025-10-24 17:37:17,717 - INFO - 正在转换: tf2.0-exercise.ipynb
+2025-10-24 17:37:19,842 - ERROR - ✗ tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:19,842 - INFO - [3/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:37:19,842 - INFO - 正在转换: tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:37:22,018 - ERROR - ✗ tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:22,019 - INFO - [4/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:37:22,019 - INFO - 正在转换: tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:37:24,127 - ERROR - ✗ tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:24,127 - INFO - ============================================================
+2025-10-24 17:37:24,127 - INFO - 转换完成！
+2025-10-24 17:37:24,127 - INFO - 成功转换: 0 个文件
+2025-10-24 17:37:24,127 - INFO - 转换失败: 4 个文件
+2025-10-24 17:37:24,127 - ERROR - 
+失败的文件详情:
+2025-10-24 17:37:24,127 - ERROR -   - D:\code\python\deeplearning\homework4\main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:24,128 - ERROR -   - D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:24,128 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:24,128 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:37:24,128 - INFO - 
+详细日志已保存到: jupyter_to_pdf.log
+2025-10-24 17:39:39,324 - INFO - 依赖检查通过
+2025-10-24 17:39:39,325 - INFO - Jupyter Notebook 批量转换工具
+2025-10-24 17:39:39,325 - INFO - 目标目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:39:39,325 - INFO - 开始时间: 2025-10-24 17:39:39
+2025-10-24 17:39:39,325 - INFO - 正在搜索目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:39:39,325 - INFO - 找到 4 个 Jupyter notebook 文件
+2025-10-24 17:39:39,325 - INFO - 开始批量转换 4 个文件...
+2025-10-24 17:39:39,325 - INFO - ============================================================
+2025-10-24 17:39:39,326 - INFO - [1/4] 处理文件: D:\code\python\deeplearning\homework4\main.ipynb
+2025-10-24 17:39:39,326 - INFO - 正在转换: main.ipynb
+2025-10-24 17:39:41,032 - ERROR - ✗ main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:41,032 - INFO - [2/4] 处理文件: D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb
+2025-10-24 17:39:41,032 - INFO - 正在转换: tf2.0-exercise.ipynb
+2025-10-24 17:39:43,190 - ERROR - ✗ tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:43,191 - INFO - [3/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:39:43,191 - INFO - 正在转换: tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:39:45,366 - ERROR - ✗ tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:45,367 - INFO - [4/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:39:45,367 - INFO - 正在转换: tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:39:47,479 - ERROR - ✗ tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:47,481 - INFO - ============================================================
+2025-10-24 17:39:47,481 - INFO - 转换完成！
+2025-10-24 17:39:47,481 - INFO - 成功转换: 0 个文件
+2025-10-24 17:39:47,481 - INFO - 转换失败: 4 个文件
+2025-10-24 17:39:47,481 - ERROR - 
+失败的文件详情:
+2025-10-24 17:39:47,482 - ERROR -   - D:\code\python\deeplearning\homework4\main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:47,482 - ERROR -   - D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34367 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:47,482 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb to pdf
+[NbConvertApp] Writing 61342 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:47,482 - ERROR -   - D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb to pdf
+[NbConvertApp] Writing 34586 bytes to notebook.tex
+[NbConvertApp] Building PDF
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 120, in run_command
+    raise OSError(msg)
+OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+
+2025-10-24 17:39:47,482 - INFO - 
+详细日志已保存到: jupyter_to_pdf.log
+2025-10-24 17:40:50,237 - INFO - 依赖检查通过
+2025-10-24 17:40:50,237 - INFO - Jupyter Notebook 批量转换工具
+2025-10-24 17:40:50,237 - INFO - 目标目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:40:50,237 - INFO - 开始时间: 2025-10-24 17:40:50
+2025-10-24 17:40:50,237 - INFO - 正在搜索目录: D:\code\python\deeplearning\homework4
+2025-10-24 17:40:50,238 - INFO - 找到 4 个 Jupyter notebook 文件
+2025-10-24 17:40:50,238 - INFO - 开始批量转换 4 个文件...
+2025-10-24 17:40:50,238 - INFO - ============================================================
+2025-10-24 17:40:50,238 - INFO - [1/4] 处理文件: D:\code\python\deeplearning\homework4\main.ipynb
+2025-10-24 17:40:50,238 - INFO - 正在转换: main.ipynb
+2025-10-24 17:43:10,190 - ERROR - ✗ main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+[NbConvertApp] Running xelatex 3 times: ['xelatex', 'notebook.tex', '-quiet']
+[NbConvertApp] CRITICAL | x failed: xelatex notebook.tex -quiet
+b'\r\ndvipdfmx:fatal: Image inclusion failed. Could not find file: fitting.jpg\r\n\r\nNo output PDF file written.\r\nmiktex-dvipdfmx: major issue: So far, you have not checked for MiKTeX updates.\r\n\r\nSorry, but xelatex did not succeed.\r\n\r\nThe log file hopefully contains the information to get MiKTeX going again:\r\n\r\n  C:\\Users\\ASUS\\AppData\\Local\\MiKTeX\\miktex\\log\\xelatex.log\r\n'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 156, in run_command
+    raise raise_on_failure(msg)
+nbconvert.exporters.pdf.LatexFailed: PDF creating failed, captured latex output:
+Failed to run "xelatex notebook.tex -quiet" command:
+
+
+dvipdfmx:fatal: Image inclusion failed. Could not find file: fitting.jpg
+
+
+
+No output PDF file written.
+
+miktex-dvipdfmx: major issue: So far, you have not checked for MiKTeX updates.
+
+
+
+Sorry, but xelatex did not succeed.
+
+
+
+The log file hopefully contains the information to get MiKTeX going again:
+
+
+
+  C:\Users\ASUS\AppData\Local\MiKTeX\miktex\log\xelatex.log
+
+
+
+2025-10-24 17:43:10,191 - INFO - [2/4] 处理文件: D:\code\python\deeplearning\homework4\tf2.0-exercise.ipynb
+2025-10-24 17:43:10,191 - INFO - 正在转换: tf2.0-exercise.ipynb
+2025-10-24 17:43:18,579 - INFO - ✓ 成功转换: tf2.0-exercise.ipynb -> tf2.0-exercise.pdf
+2025-10-24 17:43:18,580 - INFO - [3/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:43:18,580 - INFO - 正在转换: tutorial_minst_fnn-numpy-exercise.ipynb
+2025-10-24 17:43:25,586 - INFO - ✓ 成功转换: tutorial_minst_fnn-numpy-exercise.ipynb -> tutorial_minst_fnn-numpy-exercise.pdf
+2025-10-24 17:43:25,586 - INFO - [4/4] 处理文件: D:\code\python\deeplearning\homework4\tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:43:25,586 - INFO - 正在转换: tutorial_minst_fnn-tf2.0-exercise.ipynb
+2025-10-24 17:43:32,026 - INFO - ✓ 成功转换: tutorial_minst_fnn-tf2.0-exercise.ipynb -> tutorial_minst_fnn-tf2.0-exercise.pdf
+2025-10-24 17:43:32,026 - INFO - ============================================================
+2025-10-24 17:43:32,027 - INFO - 转换完成！
+2025-10-24 17:43:32,027 - INFO - 成功转换: 3 个文件
+2025-10-24 17:43:32,027 - INFO - 转换失败: 1 个文件
+2025-10-24 17:43:32,027 - ERROR - 
+失败的文件详情:
+2025-10-24 17:43:32,027 - ERROR -   - D:\code\python\deeplearning\homework4\main.ipynb: 转换失败: [NbConvertApp] Converting notebook D:\code\python\deeplearning\homework4\main.ipynb to pdf
+[NbConvertApp] Writing 22498 bytes to notebook.tex
+[NbConvertApp] Building PDF
+[NbConvertApp] Running xelatex 3 times: ['xelatex', 'notebook.tex', '-quiet']
+[NbConvertApp] CRITICAL | x failed: xelatex notebook.tex -quiet
+b'\r\ndvipdfmx:fatal: Image inclusion failed. Could not find file: fitting.jpg\r\n\r\nNo output PDF file written.\r\nmiktex-dvipdfmx: major issue: So far, you have not checked for MiKTeX updates.\r\n\r\nSorry, but xelatex did not succeed.\r\n\r\nThe log file hopefully contains the information to get MiKTeX going again:\r\n\r\n  C:\\Users\\ASUS\\AppData\\Local\\MiKTeX\\miktex\\log\\xelatex.log\r\n'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 197, in from_notebook_node
+    self.run_latex(tex_file)
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 166, in run_latex
+    return self.run_command(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\code\python\deeplearning\.venv\Lib\site-packages\nbconvert\exporters\pdf.py", line 156, in run_command
+    raise raise_on_failure(msg)
+nbconvert.exporters.pdf.LatexFailed: PDF creating failed, captured latex output:
+Failed to run "xelatex notebook.tex -quiet" command:
+
+
+dvipdfmx:fatal: Image inclusion failed. Could not find file: fitting.jpg
+
+
+
+No output PDF file written.
+
+miktex-dvipdfmx: major issue: So far, you have not checked for MiKTeX updates.
+
+
+
+Sorry, but xelatex did not succeed.
+
+
+
+The log file hopefully contains the information to get MiKTeX going again:
+
+
+
+  C:\Users\ASUS\AppData\Local\MiKTeX\miktex\log\xelatex.log
+
+
+
+2025-10-24 17:43:32,028 - INFO - 
+详细日志已保存到: jupyter_to_pdf.log
