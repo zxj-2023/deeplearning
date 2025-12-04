@@ -188,7 +188,7 @@ def main():
     """主函数"""
     # ==================== 配置参数 ====================
     # 在这里直接设置要转换的目录和选项
-    target_directory = r"D:\code\python\deeplearning\homework5"  # 使用原始字符串避免转义问题
+    target_directory = r"D:\code\python\deeplearning\homework6"  # 使用原始字符串避免转义问题
     verbose_mode = False    # 是否显示详细输出
     
     # 可选的其他目录示例：

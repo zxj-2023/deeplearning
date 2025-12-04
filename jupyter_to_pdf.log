@@ -1709,3 +1709,23 @@ The log file hopefully contains the information to get MiKTeX going again:
 2025-10-30 15:51:16,760 - INFO - 转换失败: 0 个文件
 2025-10-30 15:51:16,760 - INFO - 
 详细日志已保存到: jupyter_to_pdf.log
+2025-11-22 22:01:54,737 - INFO - 依赖检查通过
+2025-11-22 22:01:54,737 - INFO - Jupyter Notebook 批量转换工具
+2025-11-22 22:01:54,737 - INFO - 目标目录: D:\code\python\deeplearning\homework6
+2025-11-22 22:01:54,737 - INFO - 开始时间: 2025-11-22 22:01:54
+2025-11-22 22:01:54,737 - INFO - 正在搜索目录: D:\code\python\deeplearning\homework6
+2025-11-22 22:01:54,737 - INFO - 找到 2 个 Jupyter notebook 文件
+2025-11-22 22:01:54,737 - INFO - 开始批量转换 2 个文件...
+2025-11-22 22:01:54,737 - INFO - ============================================================
+2025-11-22 22:01:54,737 - INFO - [1/2] 处理文件: D:\code\python\deeplearning\homework6\main.ipynb
+2025-11-22 22:01:54,737 - INFO - 正在转换: main.ipynb
+2025-11-22 22:02:04,870 - INFO - ✓ 成功转换: main.ipynb -> main.pdf
+2025-11-22 22:02:04,870 - INFO - [2/2] 处理文件: D:\code\python\deeplearning\homework6\poem_generation_with_RNN-exercise-ch06.ipynb
+2025-11-22 22:02:04,870 - INFO - 正在转换: poem_generation_with_RNN-exercise-ch06.ipynb
+2025-11-22 22:02:11,219 - INFO - ✓ 成功转换: poem_generation_with_RNN-exercise-ch06.ipynb -> poem_generation_with_RNN-exercise-ch06.pdf
+2025-11-22 22:02:11,219 - INFO - ============================================================
+2025-11-22 22:02:11,219 - INFO - 转换完成！
+2025-11-22 22:02:11,219 - INFO - 成功转换: 2 个文件
+2025-11-22 22:02:11,219 - INFO - 转换失败: 0 个文件
+2025-11-22 22:02:11,219 - INFO - 
+详细日志已保存到: jupyter_to_pdf.log
